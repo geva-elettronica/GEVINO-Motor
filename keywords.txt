@@ -1,0 +1,84 @@
+#######################################
+# Syntax Coloring Map for GEVINO Motor
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Timer	KEYWORD1
+ISEq	KEYWORD1
+Param	KEYWORD1
+analogResult	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+gevino_motor_setup	KEYWORD2
+testLeds	KEYWORD2
+MotorInit	KEYWORD2
+SendBrushed	KEYWORD2
+Microstep	KEYWORD2
+MicrostepUp	KEYWORD2
+MicrostepDw	KEYWORD2
+MicrostepRefresh	KEYWORD2
+Microsteps	KEYWORD2
+analogPolling	KEYWORD2
+analogEnable	KEYWORD2
+analogReadExtended	KEYWORD2
+analogGain	KEYWORD2
+analogReference2	KEYWORD2
+analogReferenceCompensation	KEYWORD2
+analogCalibrate	KEYWORD2
+analogPrescaler	KEYWORD2
+analogReset	KEYWORD2
+analogDifferential	KEYWORD2
+analogDifferentialRaw	KEYWORD2
+reset	KEYWORD2
+stato	KEYWORD2
+fronte	KEYWORD2
+tempo	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+In1	LITERAL1
+In2	LITERAL1
+In3	LITERAL1
+In4	LITERAL1
+In5	LITERAL1
+Out1	LITERAL1
+Out2	LITERAL1
+Out3	LITERAL1
+Out4	LITERAL1
+setOut1	LITERAL1
+resOut1	LITERAL1
+setOut2	LITERAL1
+resOut2	LITERAL1
+setOut3	LITERAL1
+resOut3	LITERAL1
+setOut4	LITERAL1
+resOut4	LITERAL1
+setLed	LITERAL1
+resLed	LITERAL1
+set_Rs485_TxEn	LITERAL1
+res_Rs485_TxEn	LITERAL1
+setLATCH	LITERAL1
+resLATCH	LITERAL1
+setBANK_EN	LITERAL1
+resBANK_EN	LITERAL1
+setSTANDBY	LITERAL1
+resSTANDBY	LITERAL1
+LATCH	LITERAL1
+BANK_EN	LITERAL1
+STANDBY	LITERAL1
+Rs485_TxEn	LITERAL1
+SD_CS	LITERAL1
+ETH_CS	LITERAL1
+ETH_RES	LITERAL1
+An1_name	LITERAL1
+An2_name	LITERAL1
+An3_name	LITERAL1
+SinwaveTableSize	LITERAL1

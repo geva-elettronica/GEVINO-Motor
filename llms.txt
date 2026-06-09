@@ -1,0 +1,26 @@
+# GEVINO Motor
+
+> GEVINO Motor is an affordable, Arduino Zero compatible PLC for motor control, built around the Microchip SAMD21 (32-bit ARM Cortex-M0+, 48 MHz, 256 KB flash, 32 KB RAM) and a Toshiba TB67S128FTG driver (one stepper or two brushed-DC motors, constant current 50 V / 5 A, 10 A peak, microstepping to 1/128, ADMD and anti-stall). It also provides 5 PNP digital inputs, 4 short-circuit-protected PNP outputs, 3 analog inputs plus 2 motor-current channels, an RS485 bus, a micro-SD slot and optional Ethernet / Wi-Fi modules. Designed and manufactured by GEVA Elettronica (Italy); programmed with the Arduino IDE (Arduino SAMD core), Cursor or OpenPLC.
+
+This repository contains a single-header Arduino support library, the microstep sine tables, ready-to-flash examples, the hardware manual and driver datasheet (PDF), and a programming guide written specifically for LLMs and AI coding agents.
+
+## Documentation
+- [README](README.md): full product overview, technical specifications, complete pin map, microstepping/sine-table selection, installation and quick start.
+- [AGENTS.md](AGENTS.md): programming guide for LLMs and AI coding agents — non-blocking state-machine style, TB67S128FTG motor control (ISEq/Param, MotorInit, microstepping, brushed mode), non-blocking ADC + current sensing, RS485 + Modbus, Ethernet (W5500), SD, the Timer class, and HTML web-UI conventions.
+
+## Library
+- [src/gevino_motor.h](src/gevino_motor.h): the single, self-contained library header — pin/I-O macros, board setup, TB67S128FTG control, non-blocking ADC helpers and the Timer class. Include a Sinewave*.h table BEFORE this header (it references dataword_rom). When unsure of a name or pin, read this file.
+- src/Sinewave1.h … src/Sinewave1024.h: microstep sine lookup tables; include the one matching your microstep resolution.
+- [keywords.txt](keywords.txt): Arduino IDE syntax highlighting.
+- [library.properties](library.properties): Arduino library metadata.
+
+## Examples
+- [GEVINO_motor](examples/GEVINO_motor/GEVINO_motor.ino): full factory test (stepper/brushed control, inputs, outputs, analog + current sensing, RS485, SD, RTC, Ethernet, CAN, LoRa).
+- [AccelStepper](examples/AccelStepper/AccelStepper.ino): driving the stepper with the AccelStepper library.
+- [Timer](examples/Timer/Timer.ino): non-blocking blink using the Timer class.
+
+## Hardware documentation
+- [docs/](docs/): hardware manual, CE declaration and the Toshiba TB67S128FTG datasheet.
+
+## Optional
+- Manufacturer: GEVA Elettronica — https://www.gevaelettronica.it (info@gevaelettronica.it)
