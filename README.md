@@ -1,5 +1,7 @@
 # GEVINO Motor
 
+![GEVINO Motor](images/gevino_motor.png)
+
 **GEVINO Motor** is an affordable, Arduino-compatible **PLC for motor control**, built around the
 Microchip **SAMD21** microcontroller (32-bit ARM Cortex-M0+) and a **Toshiba TB67S128FTG** motor
 driver. It is **Arduino Zero compatible**, so you program it with the standard Arduino IDE / Arduino
